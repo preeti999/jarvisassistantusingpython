@@ -93,6 +93,29 @@ if __name__ == "__main__":
         elif 'open code' in query:
             codePath = "C:\\Users\\Haris\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
             os.startfile(codePath)
+            
+        elif "what's up" in query or 'how are you' in query:
+            stMsgs = ['Just doing my thing!', 'I am fine!', 'Nice!', 'I am nice and full of energy']
+            speak(random.choice(stMsgs))
+
+       
+       
+        elif 'nothing' in query or 'abort' in query or 'stop' in query:
+            speak('okay')
+            speak('Bye Sir, have a good day.')
+            sys.exit()
+           
+        elif 'hello' in query:
+            speak('Hello Sir')
+            print('Hello sir')
+
+        elif 'thakyou' in query:
+            speak('most wlcom sir')
+            print('most wlcom sir')
+
+        elif 'bye' in query:
+            speak('Bye Sir, have a good day.')
+            sys.exit()
 
         elif 'email to harry' in query:
             try:
